@@ -1,0 +1,81 @@
+body {
+ background-color: rgb(201, 196, 196);
+ margin: 0;
+ padding: 0;
+}
+
+.hamburger-menu {
+ position: fixed;
+margin-left: 10px;
+ top: 0;
+ left: 0;
+ width: 60px;
+ height: 60px;
+ display: flex;
+ flex-wrap: wrap;
+ z-index: 1000;
+ background-image: url("img/menu.png");
+ background-repeat: no-repeat;
+ background-color: transparent;
+ background-size: 100%;
+ background-position: center;
+}
+
+.hamburger-menu:hover {
+ cursor: pointer;
+ opacity: 0.6;
+}
+
+.nav-list ul {
+ display: block;
+ padding: 0;
+ margin-top: 60px;
+ overflow: hidden;
+ visibility: hidden;
+}
+
+.nav-list ul li {
+ display: block;
+ list-style-type: none;
+ text-decoration: none;
+ line-height: 50px;
+ text-transform: uppercase;
+ width: 300px;
+ border-bottom: 1px solid gray;
+}
+
+.nav-list ul li a {
+ display: block;
+ height: 100%;
+ text-decoration: none;
+ color: rgb(66, 62, 62);
+ white-space: nowrap;
+ /* transition: all 0.3s ease-in-out; */
+ padding-left: 25px;
+}
+
+/* Kleuren */
+
+.home {
+background-color: rgb(201, 196, 196);
+}
+
+.yellow {
+background-color: rgb(243, 233, 87);
+}
+
+.orange {
+background-color: rgb(252, 155, 76);
+}
+
+.red {
+background-color: rgb(241, 72, 72);
+}
+
+.green {
+background-color: rgb(109, 231, 98);
+}
+.green a:hover, .red a:hover, .orange a:hover, .yellow a:hover, .home a:hover {
+ font-size: 20px;
+ font-weight: 600;
+}
